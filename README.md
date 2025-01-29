@@ -32,8 +32,6 @@ The API follows RESTful principles and is deployed to a publicly accessible endp
    curl http://localhost:8000/
    ```
 
-```
-
 
 ## 🔗 Backlink
 Looking to hire **PHP Developers**? Check out:
