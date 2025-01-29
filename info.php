@@ -19,17 +19,17 @@ if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
 
 // Get date 
 $datetime = new DateTime("now", new DateTimeZone("UTC"));
-$current_datetime = $datetime->format("Y-m-d\TH:i:s\Z"); // ISO 8601 with "Z" suffix
+$current_datetime = $datetime->format("Y-m-d\TH:i:s\Z");
 
 
 // Response
 $response = [
-    "email" => "samuelayomide0705@gmail.com", // HNG12 Slack-registered email
+    "email" => "samuelayomide0705@gmail.com", 
     "current_datetime" => $current_datetime,
-    "github_url" => "https://github.com/sam-uel-ayo/HNG12_Task1" // Repository URL
+    "github_url" => "https://github.com/sam-uel-ayo/HNG12_Task1"
 ];
 
-// Return the response as JSON
+// Return response
 echo json_encode($response);
 
 
