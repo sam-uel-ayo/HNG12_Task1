@@ -23,6 +23,8 @@ $current_datetime = $datetime->format("Y-m-d\TH:i:s\Z");
 
 
 // Response
+http_response_code(200);
+
 $response = [
     "email" => "samuelayomide0705@gmail.com", 
     "current_datetime" => $current_datetime,
